@@ -1,0 +1,48 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url(./assets/table.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.box {
+  text-align: center;
+}
+
+h1 {
+  color: goldenrod;
+  font-size: 3rem;
+}
+
+p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#startMessage {
+  font-style: italic;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-btn {
+  color: #016f32;
+  width: 16rem;
+  background-color: goldenrod;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+}
