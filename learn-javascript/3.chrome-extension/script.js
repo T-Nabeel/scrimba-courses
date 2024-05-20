@@ -1,13 +1,24 @@
 const saveBtn = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
-const myLeads = [];
+let myLeads = [];
+
+// Get the leads from localStorage
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+console.log(leadsFromLocalStorage)
 
 saveBtn.addEventListener("click", saveLead);
 
 function saveLead() {
   myLeads.push(inputEl.value);
   inputEl.value = "";
+
+  // Save myLeads to localStorage
+  let myLeadsJSON = JSON.stringify(myLeads)
+  localStorage.setItem("myLeads", myLeadsJSON)
+
+  console.log(localStorage.getItem("myLeads"))
+
   renderLeads();
 }
 
